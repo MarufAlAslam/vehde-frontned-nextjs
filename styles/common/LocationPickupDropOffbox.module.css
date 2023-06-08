@@ -1,0 +1,65 @@
+.container {
+    background: #EFEFEF;
+    border-radius: 46.0371px;
+    padding: 8px 10px;
+}
+
+.container>div>div {
+    padding: 0 40px;
+}
+
+.container>div>div label {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 5px;
+    color: #898989;
+    margin-bottom: 5px;
+}
+
+.container>div>div>img {
+    width: 5px;
+}
+
+.container>div>div input,
+.container>div>div select {
+    font-weight: 500;
+    font-size: 11px;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #000000;
+}
+
+.container>div>div>div>div>div>div input {
+    font-weight: 500;
+    font-size: 11px;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #000000;
+    max-width: 65px;
+}
+
+.container>div>div button {
+    max-width: inherit;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .container>div>div {
+        padding: 0 15px;
+    }
+
+    .container {
+        border-radius: 15px;
+        padding: 12px 10px;
+    }
+
+    .container>div>div>button {
+        border-radius: 8px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+}

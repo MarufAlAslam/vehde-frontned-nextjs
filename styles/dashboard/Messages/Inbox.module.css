@@ -1,0 +1,27 @@
+.container {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+}
+
+.activeContainer {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    max-width: 97%;
+    padding: 10px 25px;
+    gap: 25px;
+}
+
+@media only screen and (max-width:991px) {
+    .container {
+        max-height: 85vh;
+        height: 100%;
+        overflow-y: scroll;
+        padding-bottom: 100px;
+    }
+
+    .activeContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

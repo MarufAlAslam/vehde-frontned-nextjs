@@ -1,0 +1,133 @@
+.container {
+    background: #F8F8F8;
+    padding: 20px 12px;
+    border-radius: 12px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 95%;
+    width: 100%;
+    margin: auto;
+}
+
+.header>h2 {
+    color: #030719;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.header>button {
+    color: #F8F8F8;
+    font-weight: 500;
+    font-size: 14px;
+    gap: 8px;
+    padding: 8px 25px;
+}
+
+
+.boxContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 15px 0;
+    max-height: 67vh;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 5px;
+}
+
+.boxContainer::-webkit-scrollbar {
+    width: 5px;
+    background: #EEEEEE;
+}
+
+.boxContainer::-webkit-scrollbar-thumb {
+    background: #DE4F4D;
+    border-radius: 5px;
+}
+
+
+@media only screen and (max-width:449px) {
+    .header>h2 {
+        font-size: 20px;
+    }
+
+    .header>button {
+        font-size: 13px;
+        gap: 5px;
+        padding: 5px 20px;
+    }
+}
+
+
+
+
+
+
+/* Modal Md */
+.modalMd {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+    min-height: 62vh;
+}
+
+.modalMd>h1,
+.modalMd>div {
+    padding: 10px;
+    margin-bottom: 0;
+    border-top: 1px solid #969696;
+}
+
+.modalMd>h1 {
+    border: none;
+    color: #DE4F4D;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.modalMd>div>input,
+.modalMd>div>textarea {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.modalMd>div>input {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.modalMd>div:nth-child(3) {
+    flex: 1;
+    display: flex;
+}
+
+.modalMd>div>textarea {
+    font-weight: 400;
+    font-size: 14px;
+    height: 100%;
+    min-height: 30vh;
+    flex: 1;
+    resize: none;
+}
+
+.modalMd>div:nth-child(4) {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.modalMd>div:nth-child(4)>button {
+    padding: 5px 30px;
+}
+
+.modalMd>div:nth-child(4)>i {
+    color: #969696;
+}

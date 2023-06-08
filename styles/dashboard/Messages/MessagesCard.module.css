@@ -1,0 +1,102 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    background: #F8F8F8;
+    border: 1px solid #D8D8D8;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.activeContainer {
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 0px 2px 17px rgba(0, 0, 0, 0.12);
+}
+
+.container>div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.container>div:nth-child(1)>div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.container>div:nth-child(1)>div:nth-child(2)>div:nth-child(1) {
+    background: #E9E9E9;
+    width: 50px;
+    height: 50px;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 30px;
+    color: #030719;
+    min-width: 50px;
+}
+
+.activeContainer>div:nth-child(1)>div:nth-child(2)>div:nth-child(1) {
+    background: #FFDBDB;
+}
+
+.container>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>h4 {
+    color: #000000;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.container>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>p {
+    margin-bottom: 0;
+    color: #9F9F9F;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.container>div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.container>div:nth-child(2)>div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+    flex-direction: column;
+}
+
+.container>div:nth-child(2)>div:nth-child(1)>span:nth-child(1) {
+    color: #9F9F9F;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.container>div:nth-child(2)>div:nth-child(1)>span:nth-child(2) {
+    background: #DE4F4D;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 999px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>div:nth-child(2) i {
+    color: #DE4F4D;
+    cursor: pointer;
+    font-size: 18px;
+}

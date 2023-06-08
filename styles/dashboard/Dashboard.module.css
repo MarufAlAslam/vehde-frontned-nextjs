@@ -1,0 +1,6 @@
+@media only screen and (max-width:991px) {
+    .dashboardWrapper {
+        min-height: 93vh !important;
+        max-height: 100vh !important;
+    }
+}

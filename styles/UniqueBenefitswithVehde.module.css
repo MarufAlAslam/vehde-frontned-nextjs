@@ -1,0 +1,157 @@
+#heroSection {
+    background: url(../assets/img/SmartGuid/heroSectionImg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#heroSection>div {
+    padding-bottom: 150px !important;
+    padding-top: 50px;
+}
+
+#heroSection>div>div>div {
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+#heroSection>div>div>div>div>div>h1 {
+    font-weight: 700;
+    font-size: 52px;
+    color: #030719;
+    margin-bottom: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+
+#heroSection>div>div>div>div>div>h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 58px;
+    color: #030719;
+}
+
+#heroSection>div>div>div>div>div>p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #717171;
+}
+
+#heroSection>div>div>div>div>div>h4 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #030719;
+    margin-bottom: 35px;
+}
+
+#section02 {
+    margin-bottom: 80px;
+}
+
+#section02>div>div {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 35px;
+    padding: 40px 60px;
+    margin-top: -100px;
+}
+
+#section02>div>div>div>div>span {
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    color: #000000;
+    opacity: 1;
+}
+
+span.swiper-pagination-bullet-active {
+    background: red;
+    color: #FFFFFF;
+}
+
+#section02>div>div>div>div>div>div>h2 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+    text-align: left;
+}
+
+#section02>div>div>div>div::after {
+    color: #000000;
+}
+
+@media only screen and (max-width:1400px) {
+    #section02>div>div>div>div>div {
+        margin-right: 50px !important;
+        /* padding-left: 50px; */
+    }
+}
+
+@media only screen and (max-width:991px) {
+    #section02>div>div>div {
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #heroSection>div>div>div>div>div>h1 {
+        font-size: 45px;
+        max-width: 100%;
+        color: #FFFFFF;
+    }
+
+    #heroSection>div>div>div>div>div>h2 {
+        font-size: 22px;
+        line-height: 35px;
+        color: #FFFFFF;
+    }
+
+    #heroSection>div>div>div>div>div>p {
+        font-size: 16px;
+        line-height: 20px;
+        color: #F5F5F5;
+    }
+
+    #heroSection>div>div>div>div>div>h4 {
+        font-size: 17px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+
+    #heroSection>div {
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    #section02>div>div {
+        border-radius: 25px;
+        padding: 15px 20px;
+    }
+
+    #section02>div>div>div {
+        padding-bottom: 30px;
+    }
+
+    #section02>div>div>div>div>div>div>h2 {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+    }
+
+    #section02>div>div>div>div>span {
+        width: 17px;
+        height: 17px;
+        font-size: 11px;
+    }
+
+    #section02>div>div>div>div>div {
+        margin-right: 45px !important;
+    }
+
+    #section02>div>div>div>div::after {
+        font-size: 25px;
+    }
+}

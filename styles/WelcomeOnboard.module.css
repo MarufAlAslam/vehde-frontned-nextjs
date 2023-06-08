@@ -1,0 +1,109 @@
+#heroSection {
+    background: url(../assets/img/welcome-onboard/heroSectionImg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#heroSection>div>div {
+    padding-top: 80px;
+    padding-bottom: 200px;
+}
+
+#heroSection>div>div>div>div>div>h1 {
+    font-weight: 700;
+    font-size: 50px;
+    color: #030719;
+    margin-bottom: 20px;
+    max-width: 330px;
+    width: 100%;
+}
+
+#heroSection>div>div>div>div>div>h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 58px;
+    color: #030719;
+}
+
+#heroSection>div>div>div>div>div>p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #717171;
+    max-width: 520px;
+    width: 100%;
+}
+
+#section02 {
+    margin-top: -120px;
+    position: relative;
+    z-index: 999;
+    margin-bottom: 80px;
+}
+
+#section02>div>div {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 35px;
+    padding: 50px 55px;
+}
+
+#section02>div>div img {
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+}
+
+#section02>div>div h3 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: #000000;
+    margin: 25px 0;
+}
+
+#section02>div>div>div>div:nth-child(2) {
+    filter: grayscale(1);
+}
+
+#section02>div>div>div>div:nth-child(2) img {
+    max-width: 330px;
+}
+
+
+@media only screen and (max-width:991px) {
+    #heroSection>div {
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    #heroSection>div h1,
+    #heroSection>div h2,
+    #heroSection>div p {
+        color: #FFFFFF !important;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #heroSection>div p {
+        line-height: 25px !important;
+        font-size: 16px !important;
+    }
+
+    #heroSection>div a {
+        font-size: 14px !important;
+    }
+
+    #section02>div>div {
+        border-radius: 20px;
+        padding: 40px 30px;
+    }
+
+    #section02>div>div img {
+        max-width: 100%;
+    }
+
+    #section02>div>div>div>div:nth-child(2) img {
+        max-width: 100%;
+    }
+}

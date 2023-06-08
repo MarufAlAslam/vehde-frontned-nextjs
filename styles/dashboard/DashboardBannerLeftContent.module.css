@@ -1,0 +1,51 @@
+.container {
+    max-width: 550px;
+    width: 100%;
+}
+
+.container>h2 {
+    color: #030719;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.container>p {
+    color: #030719;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.container>p>span,
+.container>p>a {
+    color: #DE4F4D;
+    font-weight: 500;
+}
+
+.buttonBlack {
+    background: #030719;
+    color: #F8F8F8;
+    outline: none;
+    border: none;
+    border-radius: 9999px;
+    padding: 10px 30px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.container button {
+    padding: 10px 30px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+@media only screen and (max-width:991px) {
+    .buttonContainer {
+        flex-direction: column;
+    }
+}

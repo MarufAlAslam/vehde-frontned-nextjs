@@ -1,0 +1,102 @@
+#heroSection {
+    background: url(../assets/img/FAQ/heroSectionImg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-bottom: 150px !important;
+    padding-top: 150px;
+}
+
+#heroSection>div>div {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+#heroSection>div>div>div>div>h1 {
+    font-weight: 700;
+    font-size: 52px;
+    color: #030719;
+    margin-bottom: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+
+#section02 {
+    margin-bottom: 80px;
+}
+
+#section02>div>div {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 35px;
+    padding: 40px 60px;
+    margin-top: -120px;
+}
+
+.AccordionItem {
+    background: #F5F5F5;
+    border-radius: 43px;
+    margin-bottom: 17px;
+    padding: 10px;
+}
+
+.AccordionItem>h2>button {
+    border: none;
+    color: #DE4F4D;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+.AccordionItem>h2>button:not(.collapsed) {
+    background-color: transparent;
+    color: #000000;
+}
+
+.AccordionItem>h2>button.collapsed {
+    color: #DE4F4D;
+}
+
+.AccordionItem>h2>button:focus {
+    box-shadow: none;
+}
+
+.AccordionItem>div {
+    border: none;
+}
+
+.AccordionItem>div>div {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #717171;
+}
+
+@media only screen and (max-width:768px) {
+    #heroSection>div>div>div>div>h1 {
+        font-size: 42px;
+        max-width: 100%;
+    }
+
+    #section02>div>div {
+        border-radius: 25px;
+        padding: 25px 20px;
+        margin-top: -100px;
+    }
+
+    .AccordionItem>h2>button {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .AccordionItem>div>div {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .AccordionItem {
+        border-radius: 25px;
+        padding: 5px;
+    }
+}

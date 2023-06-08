@@ -1,0 +1,110 @@
+.container {
+    max-height: 90vh;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100%;
+    /* overflow-y: scroll; */
+}
+
+.wrapper>div:nth-child(1) {
+    text-align: center;
+}
+
+.wrapper>div:nth-child(1) h2 {
+    font-weight: 500;
+    color: #030719;
+    font-size: 28px;
+}
+
+.wrapper>div:nth-child(1) p {
+    font-weight: 400;
+    color: #717171;
+    font-size: 16px;
+}
+
+.wrapper>div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.wrapper>div:nth-child(2)>div,
+.wrapper>div:nth-child(2)>a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: #EFEFEF;
+    padding: 30px 30px;
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    justify-content: space-between;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.wrapper>div:nth-child(2)>div:hover,
+.wrapper>div:nth-child(2)>a:hover {
+    background: #DE4F4D;
+}
+
+.wrapper>div:nth-child(2)>div span,
+.wrapper>div:nth-child(2)>a span {
+    font-size: 14px;
+}
+
+.wrapper>div:nth-child(2)>div:hover span,
+.wrapper>div:nth-child(2)>a:hover span {
+    color: #FFFFFF;
+}
+
+.wrapper>div:nth-child(2)>div:hover img,
+.wrapper>div:nth-child(2)>a:hover img {
+    filter: invert(1);
+}
+
+.wrapper>div:nth-child(2)>div:nth-child(1) img,
+.wrapper>div:nth-child(2)>a:nth-child(1) img {
+    filter: invert(1);
+}
+
+.wrapper>div:nth-child(2)>div:nth-child(1):hover img,
+.wrapper>div:nth-child(2)>a:nth-child(1):hover img {
+    filter: invert(0);
+}
+
+
+@media only screen and (max-width:991px) {
+    .container {
+        height: inherit;
+        padding-bottom: 80px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .wrapper {
+        gap: 10px;
+    }
+
+    .wrapper>div:nth-child(2) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width:449px) {
+    .wrapper>div:nth-child(2) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

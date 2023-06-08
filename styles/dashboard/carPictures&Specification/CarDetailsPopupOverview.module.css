@@ -1,0 +1,137 @@
+.container {
+    background: #030719;
+    padding: 15px 20px;
+    border-radius: 14px;
+    margin-bottom: 12px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    align-items: center;
+}
+
+.container>div:nth-child(4) button {
+    background: #FFFFFF;
+    color: #030719;
+    border-radius: 9999px;
+    padding: 12px 25px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.container>div:nth-child(1) {
+    position: relative;
+}
+
+.container>div:nth-child(1)::after {
+    content: "\f1602";
+    font-family: "Font Awesome 5";
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    right: -10%;
+    width: 5px;
+    height: 100%;
+    border-radius: 7px;
+    background: #FFFFFF;
+    color: #DE4F4D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>div:nth-child(1) span {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.container>div:nth-child(1) span span {
+    color: #DE4F4D;
+}
+
+.container>div:nth-child(1)>ul {
+    list-style: none;
+    padding-left: 0;
+    position: absolute;
+    left: 0;
+    top: 110%;
+    background: #FFFFFF;
+    padding: 12px 15px;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.25);
+    border-radius: 17px;
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    transition: all 0.3s ease;
+}
+
+.container>div:nth-child(1):hover>ul {
+    display: flex;
+}
+
+.container>div:nth-child(1)>ul li {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px 7px;
+    border-radius: 8px;
+}
+
+.activeDiscount {
+    background: #F3F3F3;
+    color: #DE4F4D;
+}
+
+.container>div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 15px;
+}
+
+.container>div:nth-child(3)>div:nth-child(2) {
+    width: 2px;
+    /* height: 100%; */
+    background: #373636;
+}
+
+.container>div:nth-child(3)>div h3,
+.container>div:nth-child(3)>div span {
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.container>div:nth-child(3)>div h3 {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.container>div:nth-child(3)>div span {
+    font-size: 12px;
+}
+
+
+
+
+
+@media only screen and (max-width:991px) {
+    .container {
+        padding: 10px 15px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

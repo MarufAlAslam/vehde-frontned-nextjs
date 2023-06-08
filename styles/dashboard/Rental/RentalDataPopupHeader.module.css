@@ -1,0 +1,200 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header>div:nth-child(1) {
+    flex: 2;
+}
+
+.header>div:nth-child(1)>h3 {
+    color: #030719;
+    font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+.header>div:nth-child(1)>h2 {
+    color: #DE4F4D;
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+.header>div:nth-child(2) {
+    flex: 3;
+}
+
+.header>div:nth-child(2)>div {
+    flex: 3;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.header>div:nth-child(2)>div:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+.header>div:nth-child(2)>div>div {
+    background: #EFEFEF;
+    border-radius: 9999px;
+    padding: 5px 30px;
+}
+
+.header>div:nth-child(2)>div>div>label {
+    color: #898989;
+    display: block;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.header>div:nth-child(2)>div>div>span {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.activeBox {
+    background: #DE4F4D !important;
+    color: white;
+}
+
+.activeBox>label {
+    color: white !important;
+}
+
+
+
+
+
+
+/* High Light */
+.highlight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    background: #000000;
+    padding: 10px 25px;
+    border-radius: 25px;
+    margin: 20px 0;
+}
+
+
+.highlightTimeBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 5px 15px;
+    border-radius: 9999px;
+    gap: 5px;
+}
+
+.highlight>div,
+.highlightTimeBox>div {
+    flex: 1;
+}
+
+.highlight>div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.highlight>div:nth-child(1)>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.highlight>div:nth-child(1)>div>img {
+    max-width: 100px;
+}
+
+.highlight>div:nth-child(1)>div>span {
+    color: #FFFFFF;
+}
+
+.highlightTimeBox>div:nth-child(1)>label {
+    color: #898989;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.highlightTimeBox>div:nth-child(1)>div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #000000;
+}
+
+.highlightTimeBox>div:nth-child(1)>div>span {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.highlightTimeBox>div:nth-child(1)>div>span:nth-child(1),
+.highlightTimeBox>div:nth-child(1)>div>span:nth-child(3) {
+    text-decoration: underline;
+}
+
+.highlight>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.highlightTimeBox>div:nth-child(2)>h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+@media only screen and (max-width:991px) {
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .header>div:nth-child(1),
+    .header>div:nth-child(2) {
+        flex: 1;
+    }
+
+    .highlight {
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 10px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .header>div:nth-child(2)>div {
+        flex-direction: column;
+    }
+
+    .highlightTimeBox {
+        flex-direction: column;
+        border-radius: 12px;
+    }
+
+    .highlight>div:nth-child(1) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

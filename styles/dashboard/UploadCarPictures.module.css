@@ -1,0 +1,300 @@
+.modalContainer {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.modalBoxWrapper {
+    padding: 25px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    max-width: 1024px;
+    width: 100%;
+    margin: 10px;
+    margin-top: 30px;
+    max-height: 85vh;
+    overflow: scroll;
+    position: relative;
+}
+
+.modalCloseBtn {
+    box-sizing: "border-box";
+    top: 15px;
+    right: -8px;
+    z-index: 9999;
+    background: #DE4F4D;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    position: absolute;
+    border: 5px solid rgba(0, 0, 0, 0.8);
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 22px;
+}
+
+.subHeading {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 13px;
+    color: #717171;
+}
+
+.videoLinkWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoLink {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoLink img {
+    max-width: 50px !important;
+    width: 100% !important;
+    height: auto;
+    object-fit: cover;
+}
+
+.videoLink span {
+    color: #717171;
+    font-size: 13px;
+}
+
+
+
+.uploadCarWrapper {
+    max-width: 250px;
+    width: 100%;
+    position: relative;
+    margin: 120px auto;
+}
+
+.uploadCarWrapper>img {
+    width: 100%;
+    height: auto;
+}
+
+
+.desktopUploadCar {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.desktopUploadCar>label {
+    position: absolute;
+    max-width: 70px !important;
+    padding: 8px !important;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.desktopUploadCar>label:nth-child(1) {
+    left: 50%;
+    top: -23%;
+    transform: translateX(-50%);
+}
+
+.desktopUploadCar>label:nth-child(2) {
+    right: -20%;
+    top: 8%;
+}
+
+.desktopUploadCar>label:nth-child(3) {
+    right: -60%;
+    top: 30%;
+}
+
+.desktopUploadCar>label:nth-child(4) {
+    right: -20%;
+    top: 50%;
+}
+
+.desktopUploadCar>label:nth-child(5) {
+    left: -50%;
+    top: 25%;
+}
+
+.desktopUploadCar>label:nth-child(6) {
+    left: -20%;
+    top: 60%;
+}
+
+.desktopUploadCar>label:nth-child(7) {
+    left: 50%;
+    top: 55%;
+    transform: translateX(-50%);
+}
+
+.desktopUploadCar>label:nth-child(8) {
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.desktopUploadCar>label::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+}
+
+.desktopUploadCar>label:nth-child(1)::after {
+    bottom: -48%;
+    left: 40%;
+    height: 50px;
+    background: url("../../assets/img/dashboard/uploadCarPictures/Front-view-Exterior.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.desktopUploadCar>label:nth-child(2)::after {
+    width: 120px;
+    top: 50%;
+    left: -170%;
+    height: 50px;
+    background: url("../../assets/img/dashboard/uploadCarPictures/Dashboard-Interior.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.desktopUploadCar>label:nth-child(3)::after {
+    width: 135px;
+    top: 35%;
+    left: -190%;
+    height: 50px;
+    background: url("../../assets/img/dashboard/uploadCarPictures/Right-side-view-Exterior.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.desktopUploadCar>label:nth-child(4)::after {
+    width: 70px;
+    top: 0%;
+    left: -100%;
+    height: 50px;
+    background: url("../../assets/img/dashboard/uploadCarPictures/Right-side-view-Interior.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.desktopUploadCar>label:nth-child(5)::after {
+    width: 110px;
+    top: 35%;
+    right: -155%;
+    height: 50px;
+    background: url("../../assets/img/dashboard/uploadCarPictures/Left-side-view-Exterior.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.desktopUploadCar>label:nth-child(6)::after {
+    width: 100px;
+    top: -43%;
+    right: -110%;
+    height: 50px;
+    background: url("../../assets/img/dashboard/uploadCarPictures/Left-side-view-Interior.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.desktopUploadCar>label:nth-child(7)::after {
+    width: 100%;
+    top: -35%;
+    left: 45%;
+    height: 40px;
+    background: url("../../assets/img/dashboard/uploadCarPictures/Rear-view-Interior.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.desktopUploadCar>label:nth-child(8)::after {
+    width: 100%;
+    top: -55%;
+    left: 40%;
+    height: 60px;
+    background: url("../../assets/img/dashboard/uploadCarPictures/Rear-view-Interior.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.mobileUploadCar {
+    display: none;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 15px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+.mobileUploadCar>label,
+.desktopUploadCar>label {
+    background: #000000;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    max-width: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.mobileUploadCar>label>img,
+.desktopUploadCar>label>img {
+    width: 100%;
+    height: auto;
+    filter: invert(1);
+}
+
+.mobileUploadCar>label>span,
+.desktopUploadCar>label>span {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.desktopUploadCar>label>span {
+    font-size: 10px;
+}
+
+@media only screen and (max-width:992px) {
+    .uploadCarWrapper {
+        display: none;
+    }
+
+    .mobileUploadCar {
+        display: flex;
+    }
+}

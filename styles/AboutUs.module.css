@@ -1,0 +1,71 @@
+#heroSection {
+    background: url(../assets/img/AboutUs-page/heroSection-img.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#heroSection>div>div {
+    padding-top: 90px;
+    padding-bottom: 140px;
+}
+
+#heroSection>div>div>div>div>h1 {
+    font-weight: 500;
+    font-size: 55px;
+    color: #000000;
+    margin-bottom: 20px;
+    max-width: 370px;
+    width: 100%;
+}
+
+#heroSection>div>div>div>div>p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #717171;
+    max-width: 460px;
+    width: 100%;
+}
+
+#heroSection>div>div>div>div>div>a {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 30px;
+    color: #DE4F4D;
+    max-width: 450px;
+    width: 100%;
+    display: block;
+}
+
+
+@media only screen and (max-width:991px) {
+    #heroSection>div {
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    #heroSection>div>div>div>div>div>p,
+    #heroSection>div>div>div>div>div a,
+    #heroSection>div>div>div>div>div>h1 {
+        color: #FFFFFF;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #heroSection>div>div>div>div>h1 {
+        font-size: 45px;
+        max-width: 100%;
+    }
+
+    #heroSection>div>div>div>div>p {
+        font-size: 14px;
+        line-height: 22px;
+        max-width: 100%;
+    }
+
+    #heroSection>div>div>div>div>div>a {
+        font-size: 13px;
+        line-height: 22px;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,436 @@
+#heroSection {
+    background: #DE4F4D;
+}
+
+#heroSection>div>div {
+    padding-top: 25px;
+    padding-bottom: 100px;
+}
+
+#heroSection>div>div>div>div>h1 {
+    font-weight: 700;
+    font-size: 52px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    max-width: 350px;
+    width: 100%;
+}
+
+#heroSection>div>div>div>div>p {
+    font-weight: 300;
+    font-size: 18px;
+    color: #FFFFFF;
+    max-width: 460px;
+    width: 100%;
+}
+
+#section02 {
+    margin-top: -120px;
+    position: relative;
+    z-index: 999;
+    margin-bottom: 80px;
+}
+
+#section02>div>div {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 35px;
+    padding: 50px 55px;
+}
+
+#section02>div>div>h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+
+#section02>div>div>div>div>div>h3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 35px;
+}
+
+#section02>div>div>div>div>div>p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    color: #717171;
+}
+
+#section02>div>div>div>div>div>div>a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 32px;
+    color: #DE4F4D;
+}
+
+#section02>div>div>div>div>img {
+    max-width: 400px;
+}
+
+#section03 {
+    margin-bottom: 80px;
+}
+
+#section03>div>div>div>h2 {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    max-width: 820px;
+    width: 100%;
+    margin: auto auto 25px auto;
+}
+
+#section03>div>div>div>div>a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 32px;
+    color: #DE4F4D;
+}
+
+#section03>div>div>div>h3 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 34px;
+    color: #DE4F4D;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#section03>div>div>div>h3>span {
+    color: #BCBCBC;
+}
+
+
+@media only screen and (max-width:768px) {
+    #section02>div>div {
+        border-radius: 20px;
+        padding: 40px 30px;
+    }
+
+    #section02>div>div>h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    #section02>div>div>div>div>div>h3 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    #section02>div>div>div>div>div>p {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 0px;
+    }
+
+    #section02>div>div>div>div>div>div>a {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    #section02>div>div>div>div>img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #section03>div>div>div>h2 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    #section03>div>div>div>div>a {
+        font-size: 12px;
+    }
+
+    #section03>div>div>div>h3 {
+        font-size: 25px;
+        line-height: 22px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+}
+
+.mapButtons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.mapButtons>button {
+    height: 14px;
+    width: 14px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+}
+
+.mapButtons>button>i {
+    font-size: 22px;
+}
+
+.dot01 {
+    top: 75.3%;
+    left: 30.2%;
+}
+
+.dot02 {
+    top: 72.2%;
+    left: 19.3%;
+}
+
+.dot03 {
+    top: 23%;
+    left: 44.5%;
+}
+
+.dot04 {
+    top: 68.8%;
+    left: 74.3%;
+}
+
+.dot05 {
+    top: 91.7%;
+    left: 72.4%;
+}
+
+.dot06 {
+    top: 46%;
+    left: 19.5%;
+}
+
+.dot07 {
+    top: 62.3%;
+    left: 7%;
+}
+
+.dot08 {
+    top: 0%;
+    left: 7%;
+}
+
+.dot09 {
+    top: 72.3%;
+    left: 10.5%;
+}
+
+.dot10 {
+    top: 29.4%;
+    left: 28.2%;
+}
+
+.dot11 {
+    top: 26.2%;
+    left: 92%;
+}
+
+.dot12 {
+    top: 16.5%;
+    left: 48%;
+}
+
+.dot13 {
+    top: 46%;
+    left: 17.5%;
+}
+
+.dot14 {
+    top: 46%;
+    left: 26.5%;
+}
+
+.dot15 {
+    top: 62.3%;
+    left: 79.6%;
+}
+
+.dot16 {
+    top: 52.3%;
+    left: 83%;
+}
+
+.dot17 {
+    top: 39.2%;
+    left: 65.4%;
+}
+
+.dot18 {
+    top: 65.4%;
+    left: 70.7%;
+}
+
+.dot19 {
+    top: 62.3%;
+    left: 26.4%;
+}
+
+.dot20 {
+    top: 82%;
+    left: 51.3%;
+}
+
+.dot21 {
+    top: 46.1%;
+    left: 12.3%;
+}
+
+.dot22 {
+    top: 49.1%;
+    left: 79.6%;
+}
+
+.dot23 {
+    top: 91.8%;
+    left: 68.8%;
+}
+
+.dot24 {
+    top: 9.8%;
+    left: 24.5%;
+}
+
+.dot25 {
+    top: 78.8%;
+    left: 62%;
+}
+
+.dot26 {
+    top: 72.3%;
+    left: 56.4%;
+}
+
+.dot27 {
+    top: 36.1%;
+    left: 90.2%;
+}
+
+.dot28 {
+    top: 49.4%;
+    left: 3.7%;
+}
+
+.dot29 {
+    top: 45.8%;
+    left: 85%;
+}
+
+.dot30 {
+    top: 75.3%;
+    left: 70.6%;
+}
+
+.dot31 {
+    top: 23%;
+    left: 21%;
+}
+
+.dot32 {
+    top: 49.1%;
+    left: 74.2%;
+}
+
+.dot33 {
+    top: 62.2%;
+    left: 65.3%;
+}
+
+.dot34 {
+    top: 45.8%;
+    left: 81.2%;
+}
+
+.dot35 {
+    top: 32.6%;
+    left: 90.1%;
+}
+
+.dot36 {
+    top: 36%;
+    left: 75.9%;
+}
+
+.dot37 {
+    top: 59%;
+    left: 60%;
+}
+
+.dot38 {
+    top: 46%;
+    left: 49.6%;
+}
+
+.dot39 {
+    top: 32.6%;
+    left: 92%;
+}
+
+.dot40 {
+    top: 42.6%;
+    left: 86.8%;
+}
+
+.dot41 {
+    top: 65.5%;
+    left: 77.8%;
+}
+
+.dot42 {
+    top: 9.8%;
+    left: 35.3%;
+}
+
+.dot43 {
+    top: 69%;
+    left: 46.2%;
+}
+
+.dot44 {
+    top: 26.4%;
+    left: 8.8%;
+}
+
+.dot45 {
+    top: 42.6%;
+    left: 83.3%;
+}
+
+.dot46 {
+    top: 72%;
+    left: 72.5%;
+}
+
+.dot47 {
+    top: 65.4%;
+    left: 67%;
+}
+
+.dot48 {
+    top: 6.8%;
+    left: 10.5%;
+}
+
+@media only screen and (max-width:1200px) {
+    .mapButtons>button {
+        height: 10px;
+        width: 10px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .mapButtons>button {
+        height: 6px;
+        width: 6px;
+    }
+}

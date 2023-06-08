@@ -1,0 +1,261 @@
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    padding: 5px 15px;
+    /* max-height: 100vh; */
+    height: 100%;
+    overflow-y: scroll;
+}
+
+@media only screen and (max-width:991px) {
+    .container {
+        padding-bottom: 120px;
+    }
+}
+
+
+/* Main Content */
+.mainContent {
+    background: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+
+.mainContent>div {
+    text-align: center;
+    max-width: 600px;
+}
+
+.mainContent>div>h1 {
+    color: #030719;
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.mainContent>div>p {
+    color: #737373;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.mainContent>div>h4 {
+    color: #000000;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.mainContent>div>label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 250px;
+    width: 100%;
+}
+
+.mainContent>div>label {
+    cursor: pointer;
+    border-radius: 9999px;
+    background: #FFFFFF;
+}
+
+.mainContent>div>label span {
+    padding: 5px 10px;
+    text-align: center;
+    flex: 1;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+}
+
+.mainContent>div>input:not(:checked)~label span:nth-child(2) {
+    background: #0d120d;
+    color: white;
+    font-weight: 600;
+}
+
+.mainContent>div>input:checked~label span:nth-child(1) {
+    background: #DE4F4D;
+    color: white;
+    font-weight: 600;
+}
+
+
+
+
+/* Modal */
+.modalContainer {
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.modalContainer>h2 {
+    color: #030719;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.modalContainer>p {
+    color: #737373;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.formWrapper {
+    background: #EFEFEF;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.formWrapper>h1 {
+    color: #030719;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.formWrapper>p {
+    color: #030719;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.formWrapper>h4 {
+    color: #030719;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.formWrapper>div>div {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border-radius: 9999px;
+    padding: 2px 18px 5px 18px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+.formWrapper>div>div>label {
+    color: #898989;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: left;
+}
+
+.formWrapper>div>div>input {
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.formWrapper>button {
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    color: #898989;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+
+
+/* Flash Screen */
+.flashScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.flashScreen>img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+
+.flashScreen>h2 {
+    color: #DE4F4D;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.flashScreen>p {
+    color: #737373;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.flashScreen>p>span {
+    color: #DE4F4D;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+/* =========================================== Renter Part =========================================== */
+.renterContainer {}
+
+.renterContainer>p>span {
+    color: #030719;
+    font-weight: 500;
+}
+
+.renterGreateNewsText {
+    color: #DE4F4D;
+}
+
+.renterScreenBanner {
+    background: #030719;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.renterScreenBanner>h2 {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.renterScreenBanner>p {
+    margin-bottom: 5px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.renterScreenBanner>p>span {
+    font-weight: 500;
+    color: #DE4F4D;
+}
+
+/* =====================================xxx=== Renter Part ===xxx===================================== */

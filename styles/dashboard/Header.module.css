@@ -1,0 +1,472 @@
+#header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+#header>div:nth-child(2) {
+    display: flex;
+    flex: 1;
+    gap: 8px;
+    align-items: center;
+    border-radius: 9999px;
+    background: #F8F8F8;
+    padding: 8px 15px;
+    position: relative;
+}
+
+#header>div:nth-child(2)>div {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 230px;
+    background: #F8F8F8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    border-radius: 999px;
+    z-index: 99999;
+    padding: 2px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    display: none;
+    transition: all 0.3s ease;
+}
+
+#header>div:nth-child(2)>div>input {
+    background: transparent;
+    border: none;
+    flex: 1;
+    outline: none;
+    font-size: 12px;
+    padding: 8px 12px;
+}
+
+#header>div:nth-child(2)>input {
+    background: transparent;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 6px 5px;
+}
+
+#header>div:nth-child(3) {
+    width: 270px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+#header>div:nth-child(3)>div:nth-child(1) {
+    font-size: 22px;
+    font-weight: 700;
+    color: #DE4F4D;
+    background: #FFE0DF;
+    border: 2px solid #DE4F4D;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header>div:nth-child(3)>div:nth-child(2) h3 {
+    color: #DE4F4D;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+#header>div:nth-child(3)>div:nth-child(2) span {
+    color: #6A6A6A;
+    font-size: 8px;
+    font-weight: 600;
+}
+
+#header>div:nth-child(3) i {
+    color: #BCBCBC;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#header>div:nth-child(3)>div:nth-child(4) {
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    width: 220px;
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+    background-color: #FFFFFF;
+}
+
+#header>div:nth-child(3)>div:nth-child(4) h4 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#header>div:nth-child(3)>div:nth-child(4)>div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#header>div:nth-child(3)>div:nth-child(4)>div>a,
+#header>div:nth-child(3)>div:nth-child(4)>div>button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+#header>div:nth-child(3)>div:nth-child(4)>div>a:hover,
+#header>div:nth-child(3)>div:nth-child(4)>div>button:hover {
+    opacity: 0.7;
+}
+
+#header>div:nth-child(3)>div:nth-child(4)>div>a>img,
+#header>div:nth-child(3)>div:nth-child(4)>div>button>img {
+    width: 20px;
+    height: auto;
+}
+
+#header>div:nth-child(3)>div:nth-child(4)>div>a>span,
+#header>div:nth-child(3)>div:nth-child(4)>div>button>span {
+    font-size: 14px;
+}
+
+#header>div:nth-child(3)>div:nth-child(4)>label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#header>div:nth-child(3)>div:nth-child(4)>label {
+    cursor: pointer;
+    border-radius: 9999px;
+    background: #EFEFEF;
+}
+
+#header>div:nth-child(3)>div:nth-child(4)>label span {
+    padding: 5px 10px;
+    text-align: center;
+    flex: 1;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+}
+
+#header>div:nth-child(3)>div:nth-child(4)>input:not(:checked)~label span:nth-child(2) {
+    background: #0d120d;
+    color: white;
+    font-weight: 600;
+}
+
+#header>div:nth-child(3)>div:nth-child(4)>input:checked~label span:nth-child(1) {
+    background: #DE4F4D;
+    color: white;
+    font-weight: 600;
+}
+
+/* Toggle Menu Btn */
+#toggleMenuBtn {
+    display: none;
+}
+
+#toggleMenuBtn i {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* ======================== Profile Modal ======================== */
+.profileModal {}
+
+.profileModal>h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.profileModal>div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.profileModal>div>div,
+.profileModal>div>a {
+    background: #EFEFEF;
+    border-radius: 20px;
+    padding: 25px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.profileModal>div>div:hover,
+.profileModal>div>a:hover {
+    background: #DE4F4D;
+    color: #FFFFFF;
+}
+
+.profileModal>div>a>img,
+.profileModal>div>div>img {
+    max-width: 70px;
+    height: auto;
+}
+
+.profileModal>div>a:hover>img,
+.profileModal>div>div:hover>img {
+    filter: invert(1);
+}
+
+.profileModal>div>a>h4,
+.profileModal>div>div>h4 {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.profileModal>div>a:nth-child(3)>img,
+.profileModal>div>div:nth-child(3)>img {
+    filter: invert(1);
+}
+
+.profileModal>div>a:nth-child(3):hover>img,
+.profileModal>div>div:nth-child(3):hover>img {
+    filter: invert(0);
+}
+
+/* ==================xxx=== Profile Modal ===xxx================== */
+
+
+
+
+
+
+
+
+/* ======================== License Box ======================== */
+.modalLgBox {}
+
+.modalLgBox>h2 {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.modalLgBox>h2>span {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.modalLgBox>h5 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    color: #6A6A6A;
+    margin-top: 25px;
+}
+
+.modalLgBox>h5>span {
+    color: #169643;
+}
+
+.modalLgBox>p:nth-child(3) {
+    line-height: 1.2;
+    color: #6A6A6A;
+    font-size: 14px;
+}
+
+.modalLgBox>p:nth-child(3)>span {
+    color: #DE4F4D;
+    font-weight: 600;
+}
+
+.modalLgBox>div:nth-child(4) {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.modalLgBox>div:nth-child(4)>i {
+    cursor: pointer;
+}
+
+.modalInputBox {
+    background: #EFEFEF;
+    padding: 5px 22px 0px 22px;
+    border-radius: 99px;
+}
+
+.modalInputBox>label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #6A6A6A;
+}
+
+.modalInputBox>input,
+.modalInputBox>select {
+    padding: 4px 0 8px 0;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.modalInputBox>input::placeholder,
+.modalInputBox>select::placeholder {
+    color: #0d120d;
+}
+
+.modalCheckbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.modalCheckbox>input {}
+
+.modalCheckbox>label {
+    color: #BCBCBC;
+    font-size: 14px;
+}
+
+.modalCheckbox>label>a {
+    color: #DE4F4D;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.modalBtnBox {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.modalBtnSuccess {
+    outline: none;
+    border: none;
+    padding: 5px 28px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background: #169643;
+}
+
+.modalBtnSuccessOutline {
+    outline: none;
+    border: 1.5px solid #169643;
+    padding: 5px 28px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #6A6A6A;
+    background: transparent;
+}
+
+/* ==================xxx=== License Box ===xxx================== */
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:991px) {
+    #toggleMenuBtn {
+        display: block;
+    }
+
+    .profileModal>div {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #header>div:nth-child(2) {
+        flex: inherit;
+        padding: 8px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    }
+
+    #header>div:nth-child(2)>input {
+        display: none;
+    }
+
+    #activeSearch {
+        display: flex !important;
+    }
+
+    #header>div:nth-child(3) {
+        width: 200px;
+        padding: 5px;
+        gap: 4px;
+    }
+
+    #header>div:nth-child(3)>div:nth-child(1) {
+        font-size: 16px;
+        font-weight: 500;
+        border: 1px solid #DE4F4D;
+        width: 30px;
+        height: 30px;
+    }
+
+    #header>div:nth-child(3)>div:nth-child(2) h3 {
+        font-size: 13px;
+        line-height: 4px;
+    }
+
+    #header>div:nth-child(3)>div:nth-child(2) span {
+        font-size: 7.5px;
+        font-weight: 500;
+        letter-spacing: -0.4px;
+    }
+
+    #header>div:nth-child(3) i {
+        font-size: 12px;
+    }
+
+    #header>div:nth-child(3)>div:nth-child(4) {
+        top: 40px;
+        width: 200px;
+        padding: 12px 22px;
+    }
+
+    #header>div:nth-child(3)>div:nth-child(4) h4 {
+        font-size: 13px;
+    }
+
+    .profileModal>div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

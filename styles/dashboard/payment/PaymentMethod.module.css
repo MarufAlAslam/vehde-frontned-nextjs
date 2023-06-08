@@ -1,0 +1,82 @@
+.container {
+    height: 100%;
+    overflow: scroll;
+}
+
+.tableContainer {
+    background: #F8F8F8;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 15px;
+    overflow-x: scroll;
+}
+
+.tableContainer table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 25px;
+    min-width: 900px;
+}
+
+.tableContainer table thead th {
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 10px;
+    color: #030719;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.tableContainer table tbody tr td {
+    color: #030719;
+    font-weight: 400;
+    font-size: 13px;
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 25px;
+}
+
+.tableContainer table tbody tr td:nth-child(1),
+.tableContainer table tbody tr td:nth-child(6) {
+    font-weight: 600;
+}
+
+.tableContainer table tbody tr td button {
+    font-weight: 500;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    padding: 6px 25px;
+    border-radius: 9999px;
+}
+
+.successBtn {
+    background: #A6FF98;
+    color: #17A600;
+}
+
+.warningBtn {
+    background: #FFE898;
+    color: #A08522;
+}
+
+.inactiveBtn {
+    background: #E0E0E0;
+    color: #959595;
+    pointer-events: none;
+}
+
+.dangerIcon {
+    color: #DE4F4D;
+    font-size: 20px;
+}
+
+.blackIcon {
+    color: #030719;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:991px) {
+    .container {
+        padding-bottom: 120px;
+    }
+}

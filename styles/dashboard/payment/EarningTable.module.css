@@ -1,0 +1,85 @@
+.container {
+    background: #F8F8F8;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.container>h2 {
+    text-align: center;
+    color: #030719;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.container>div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: #F8F8F8;
+    border: 1px solid #D8D8D8;
+    padding: 8px 30px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.container>div:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.12);
+    border: 1px solid transparent;
+}
+
+.container>div:nth-child(2) {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 5px transparent;
+}
+
+.container>div:nth-child(2) {
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    cursor: auto;
+}
+
+.container>div:nth-child(2)>span:nth-child(1),
+.container>div:nth-child(2)>span:nth-child(2) {
+    color: #000000;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.container>div>span:nth-child(1) {
+    color: #000000;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.container>div>span:nth-child(2) {
+    color: #000000;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.totalPrice {
+    border: none !important;
+}
+
+.totalPrice:hover {
+    box-shadow: none !important;
+    background: transparent !important;
+    cursor: auto;
+}
+
+.totalPrice>span:nth-child(1) {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+}
+
+.totalPrice>span:nth-child(2) {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    color: #DE4F4D !important;
+}

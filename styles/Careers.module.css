@@ -1,0 +1,218 @@
+#heroSection {
+    background: url(../assets/img/Careers/heroSectionImg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#heroSection>div {
+    padding-top: 100px;
+    padding-bottom: 150px !important;
+}
+
+#heroSection h1 {
+    font-size: 52px;
+    color: #030719;
+    max-width: 415px;
+    font-weight: 700;
+}
+
+#heroSection>div>div {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+#reserveCarSection {
+    margin-top: -120px;
+    margin-bottom: 100px;
+}
+
+.reserveCarSectionWrapper {
+    background: #FFFFFF;
+    padding: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+}
+
+.reserveCarSectionWrapper h2 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 25px;
+    color: #030719;
+    letter-spacing: 1.5px;
+}
+
+.reserveCarSectionWrapper>div {
+    background: #EFEFEF;
+    border-radius: 46.0371px;
+    padding: 8px 10px;
+}
+
+.reserveCarSectionWrapper>div>div>div {
+    padding: 0 40px;
+}
+
+.reserveCarSectionWrapper>div>div>div label {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 11px;
+    color: #898989;
+    margin-bottom: 10px;
+}
+
+.reserveCarSectionWrapper>div>div>div input {
+    font-weight: 500;
+    font-size: 13px;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #000000;
+}
+
+.reserveCarSectionWrapper>div>div>div button {
+    max-width: inherit;
+}
+
+#section03>div>div {
+    max-width: 1000px;
+    width: 100%;
+    margin: 40px auto;
+}
+
+#section03>div>div>h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    color: #000000;
+}
+
+#section03>div>div>p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #717171;
+}
+
+#section03>div>div>p>a {
+    color: #DE4F4D;
+}
+
+
+.AccordionItem {
+    background: #F5F5F5;
+    border-radius: 43px;
+    margin-bottom: 17px;
+    padding: 10px;
+}
+
+.AccordionItem>h2>button {
+    border: none;
+    color: #DE4F4D;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+.AccordionItem>h2>button:not(.collapsed) {
+    background-color: transparent;
+    color: #000000;
+}
+
+.AccordionItem>h2>button.collapsed {
+    color: #DE4F4D;
+}
+
+.AccordionItem>h2>button:focus {
+    box-shadow: none;
+}
+
+.AccordionItem>div {
+    border: none;
+}
+
+.AccordionItem>div>div {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #717171;
+}
+
+.AccordionItem>div>div>p>a {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    color: #DE4F4D;
+}
+
+.AccordionItem>div>div>div>a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 32px;
+    color: #DE4F4D;
+}
+
+#section04>div>div>div>button {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 14px;
+    color: #000000;
+}
+
+.section04ButtonActive {
+    background: #DE4F4D !important;
+    color: #FFFFFF !important;
+}
+
+@media only screen and (max-width: 768px) {
+    #heroSection h1 {
+        font-size: 40px;
+        max-width: none;
+        color: #FFFFFF;
+    }
+
+    #heroSection>div {
+        background: rgba(0, 0, 0, 0.25);
+    }
+
+    #reserveCarSection h2 {
+        font-size: 32px;
+        letter-spacing: inherit;
+    }
+
+    .reserveCarSectionWrapper>div>div>div {
+        padding: 0 15px;
+    }
+
+    .reserveCarSectionWrapper>div {
+        border-radius: 15px;
+        padding: 12px 10px;
+    }
+
+    .reserveCarSectionWrapper>div>div>div>button {
+        border-radius: 8px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    .AccordionItem>h2>button {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .AccordionItem>div>div {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .AccordionItem {
+        border-radius: 25px;
+        padding: 5px;
+    }
+}

@@ -1,0 +1,76 @@
+#heroSection {
+    background: url(../assets/img/Careers/heroSectionImg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#heroSection>div {
+    padding-top: 100px;
+    padding-bottom: 150px !important;
+}
+
+#heroSection h1 {
+    font-size: 55px;
+    color: #030719;
+    max-width: 415px;
+}
+
+#heroSection>div>div {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+#reserveCarSection {
+    margin-top: -120px;
+    margin-bottom: 100px;
+}
+
+.reserveCarSectionWrapper {
+    background: #FFFFFF;
+    padding: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+}
+
+.reserveCarSectionWrapper h2 {
+    font-weight: 500;
+    font-size: 45px;
+    margin-bottom: 25px;
+    color: #030719;
+    letter-spacing: 1.5px;
+}
+
+.reserveCarSectionWrapper>div {
+    background: #EFEFEF;
+    border-radius: 15px;
+    padding: 22px 15px;
+    margin-bottom: 20px;
+}
+
+.reserveCarSectionWrapper>h4 {
+    font-size: 22px;
+    color: #DE4F4D;
+}
+
+.reserveCarSectionWrapper>p {
+    font-size: 14px;
+    color: #030719;
+}
+
+@media only screen and (max-width: 768px) {
+    #heroSection h1 {
+        font-size: 40px;
+        max-width: none;
+        color: #FFFFFF;
+    }
+
+    #heroSection>div {
+        background: rgba(0, 0, 0, 0.25);
+    }
+
+    .reserveCarSectionWrapper>div {
+        border-radius: 15px;
+        padding: 12px 10px;
+    }
+}
