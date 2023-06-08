@@ -111,10 +111,10 @@ const MyHost = () => {
                                 <p>My car. My extra income.</p>
                             </div>
                             <div>
-                                <div>
+                                <Link href={"/dashboard/HostedCars"}>
                                     <Image src={HostCarsIcon} alt='' />
                                     <span>Host cars</span>
-                                </div>
+                                </Link>
                                 <Link href="/dashboard/profile">
                                     <Image src={MyProfileIcon} alt='' />
                                     <span>My Profile</span>

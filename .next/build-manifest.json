@@ -25,10 +25,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/dashboard/CarListing": [
+    "/dashboard/Availability": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/dashboard/CarListing.js"
+      "static/chunks/pages/dashboard/Availability.js"
+    ],
+    "/dashboard/HostedCars": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/dashboard/HostedCars.js"
     ]
   },
   "ampFirstPages": []
