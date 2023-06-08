@@ -6,7 +6,7 @@ import HelpImg from "../../assets/img/dashboard/help.svg"
 import UserImg from "../../assets/img/dashboard/user.svg"
 import LogOutImg from "../../assets/img/dashboard/logout.svg"
 import Link from "next/link"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import ModalLg from "../../components/common/ModalLg"
 import ModalMd from "../../components/common/ModalMd"
 
@@ -31,6 +31,18 @@ const DashboardHeader = ({ mobileMenu, setMobileMenu, userRole }) => {
     const [editLicense, setEditLicense] = useState(false)
     const [editContactInfo, setEditContactInfo] = useState(false)
 
+    const [fullName, setFullName] = useState("name")
+    const [avatar, setAvatar] = useState()
+
+    useEffect(() => {
+        const user = JSON.parse(localStorage.getItem("user"))
+        if (user) {
+            setFullName(user.firstName + " " + user.lastName)
+            setAvatar(fullName[0].toUpperCase())
+        }
+    }, [fullName])
+
+
     return (
         <>
             <header id={styles.header}>
@@ -48,9 +60,13 @@ const DashboardHeader = ({ mobileMenu, setMobileMenu, userRole }) => {
                     </div>
                 </div>
                 <div>
-                    <div>J</div>
                     <div>
-                        <h3>Jane Wesley</h3>
+                        {avatar}
+                    </div>
+                    <div>
+                        <h3>
+                            {fullName}
+                        </h3>
                         <span>VEHDE ID: JW-H (TX) 868746-78613</span>
                     </div>
                     <i className="fa fa-chevron-down" onClick={() => setShowMenu(!showMenu)}></i>

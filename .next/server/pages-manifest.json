@@ -2,6 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/SigninUpWithVehde": "pages/SigninUpWithVehde.js",
-  "/WelcomeOnboard": "pages/WelcomeOnboard.js"
+  "/dashboard/CarListing": "pages/dashboard/CarListing.js"
 }

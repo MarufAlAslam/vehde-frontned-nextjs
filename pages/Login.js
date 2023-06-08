@@ -27,8 +27,9 @@ const Login = () => {
           .then((res) => res.json())
           .then((data) => {
             console.log(data);
+            localStorage.setItem("user", JSON.stringify(data));
             if (data.email === emailOrPhone || data.phone === emailOrPhone) {
-              router.push("/WelcomeOnboard");
+              router.push("/dashboard/profile");
             }
             else {
               alert("User not found");
