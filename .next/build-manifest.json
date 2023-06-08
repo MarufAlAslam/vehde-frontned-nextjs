@@ -15,10 +15,15 @@
   ],
   "rootMainFiles": [],
   "pages": {
-    "/Host": [
+    "/SigninUpWithVehde": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Host.js"
+      "static/chunks/pages/SigninUpWithVehde.js"
+    ],
+    "/WelcomeOnboard": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/WelcomeOnboard.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
