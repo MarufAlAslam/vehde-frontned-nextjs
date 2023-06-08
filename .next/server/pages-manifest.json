@@ -2,6 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/dashboard/HostedCars": "pages/dashboard/HostedCars.js",
+  "/dashboard/Messages/Inbox": "pages/dashboard/Messages/Inbox.js",
+  "/dashboard/Messages/Sent": "pages/dashboard/Messages/Sent.js",
+  "/dashboard/Messages/Trash": "pages/dashboard/Messages/Trash.js",
   "/dashboard/Availability": "pages/dashboard/Availability.js"
 }
